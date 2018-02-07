@@ -123,8 +123,24 @@
 							<section id="cta" class="main special">
 								<header class="major">
 									<h2>Facebook Feed</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<script>
+  									window.fbAsyncInit = function() {
+    									FB.init({
+      									appId            : '100004618817214',
+      									autoLogAppEvents : true,
+      									xfbml            : true,
+      									version          : 'v2.12'
+    										});
+  									};
+
+  									(function(d, s, id){
+     									var js, fjs = d.getElementsByTagName(s)[0];
+     									if (d.getElementById(id)) {return;}
+     									js = d.createElement(s); js.id = id;
+     									js.src = "https://www.facebook.com/daletrumanyarborough";
+     									fjs.parentNode.insertBefore(js, fjs);
+   									}(document, 'script', 'facebook-jssdk'));
+									</script>
 								</header>
 							</section>
 
